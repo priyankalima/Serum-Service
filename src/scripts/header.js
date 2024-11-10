@@ -82,5 +82,34 @@ header.append(
                 })
             })
         }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className:"about-section",
+            id:"aboutSection",
+            innerHTML:`
+               <div class="d-flex">
+                   <div class="about-section-left-img" id="aboutSectionLeftImg"></div>
+                   <div class="about-section-right-content" id="aboutSectionRightContent"></div>
+               </div>
+            `,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=> res.json()).then(data=>{
+                    const item = data.aboutSection;
+
+                    aboutSectionLeftImg.innerHTML = `
+                        <img src=${item.img}>
+                    `
+                    aboutSectionRightContent.innerHTML = `
+                    <div class="container d-flex">
+                       <span>About Us</span>
+                       <span>${item.content}</span>
+                       <button> Know More </button>
+                    </div>
+                    `
+                })
+            })
+        }
     )
 )

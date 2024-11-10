@@ -25,5 +25,9 @@
                 "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             }
         ]
+    },
+    "aboutSection":{
+        "img":"./src/assets/side-img-1.svg",
+        "content":"Face Serum are lightweight products that contain a high concentration of active ingredient."
     }
 }

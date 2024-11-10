@@ -1,0 +1,29 @@
+{
+    "headerSection":{
+        "logo":"",
+        "img":"./src/assets/serum-img.svg",
+        "menu":["about","service","blog","contact"],
+        "title":"HYPERCHAR SKIN SERUM",
+        "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
+    },
+    "serumInfo":{
+        "title":"Why Choose Us?",
+        "content":[
+            {
+                "icon":"./src/assets/serum-info-icons/icon-1.svg",
+                "title":"Natural",
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "icon":"./src/assets/serum-info-icons/icon-2.svg",
+                "title":"No side effect",
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "icon":"./src/assets/serum-info-icons/icon-3.svg",
+                "title":"100% Organic",
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    }
+}

@@ -1,4 +1,4 @@
-header.append(
+main.append(
     Object.assign(
         document.createElement('section'),
         {

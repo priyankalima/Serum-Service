@@ -1,7 +1,7 @@
 {
     "headerSection":{
         "logo":"",
-        "img":"./src/assets/serum-img.svg",
+        "img":"./assets/serum-img.svg",
         "menu":["about","service","blog","contact"],
         "title":"HYPERCHAR SKIN SERUM",
         "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
@@ -10,24 +10,24 @@
         "title":"Why Choose Us?",
         "content":[
             {
-                "icon":"./src/assets/serum-info-icons/icon-1.svg",
+                "icon":"./assets/serum-info-icons/icon-1.svg",
                 "title":"Natural",
                 "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             },
             {
-                "icon":"./src/assets/serum-info-icons/icon-2.svg",
+                "icon":"./assets/serum-info-icons/icon-2.svg",
                 "title":"No side effect",
                 "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             },
             {
-                "icon":"./src/assets/serum-info-icons/icon-3.svg",
+                "icon":"./assets/serum-info-icons/icon-3.svg",
                 "title":"100% Organic",
                 "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             }
         ]
     },
     "aboutSection":{
-        "img":"./src/assets/side-img-1.svg",
+        "img":"./assets/side-img-1.svg",
         "content":"Face Serum are lightweight products that contain a high concentration of active ingredient."
     },
     "benefitSection":[
@@ -45,7 +45,7 @@
         }
     ],
     "promotSection":{
-        "img":"./src/assets/side-img-2.svg"
+        "img":"./assets/side-img-2.svg"
     },
     "testimonial":[
         {

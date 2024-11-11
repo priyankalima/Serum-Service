@@ -4,14 +4,14 @@ header.append(
         {
             className: "header-section",
             id: "headerSection",
-            innerHTML:`
+            innerHTML: `
             <div class="container d-flex">
                 <div class="serum-left-content" id="serumLeftContent"></div>
                 <div class="serum-right-img" id="serumRightImg"></div>
             </div>
             `,
-            function:addEventListener('load',()=>{
-                fetch('./content.json').then(res=>res.json()).then(data=>{
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
                     const item = data.headerSection;
                     serumLeftContent.innerHTML = `
                        <div class="serum-logo">
@@ -40,11 +40,10 @@ header.append(
                     serumRightImg.innerHTML = `
                       <img src=${item.img}>
                       <div class="menu-list">
-                           ${
-                            item.menu.map(list=>{
-                                return `<a>${list}</a>`
-                            }).join("")
-                           }
+                           ${item.menu.map(list => {
+                        return `<a>${list}</a>`
+                    }).join("")
+                        }
                       </div>
                     `
                 })
@@ -54,22 +53,22 @@ header.append(
     Object.assign(
         document.createElement('section'),
         {
-            className:"serum-info-section",
-            id:"serumInfoSection",
-            innerHTML:`
+            className: "serum-info-section",
+            id: "serumInfoSection",
+            innerHTML: `
                <div class="container d-flex">
                     <div class="serum-top-title" id="serumTopTitle"></div>
                     <div class="serum-bottom-content" id="serumBottomContent"></div>
                </div>
             `,
-            function:addEventListener('load',()=>{
-                fetch('./content.json').then(res=>res.json()).then(data=>{
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
                     const item = data.serumInfo;
 
                     serumTopTitle.innerHTML = `
                         <span>${item.title}</span>
                     `
-                    item.content.forEach(list=>{
+                    item.content.forEach(list => {
                         serumBottomContent.innerHTML += `
                         <div class="content">
                             <img src=${list.icon}>
@@ -86,16 +85,16 @@ header.append(
     Object.assign(
         document.createElement('section'),
         {
-            className:"about-section",
-            id:"aboutSection",
-            innerHTML:`
+            className: "about-section",
+            id: "aboutSection",
+            innerHTML: `
                <div class="d-flex">
                    <div class="about-section-left-img" id="aboutSectionLeftImg"></div>
                    <div class="about-section-right-content" id="aboutSectionRightContent"></div>
                </div>
             `,
-            function:addEventListener('load',()=>{
-                fetch('./content.json').then(res=> res.json()).then(data=>{
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
                     const item = data.aboutSection;
 
                     aboutSectionLeftImg.innerHTML = `
@@ -107,6 +106,63 @@ header.append(
                        <span>${item.content}</span>
                        <button> Know More </button>
                     </div> 
+                    `
+                })
+            })
+        }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className: "serum-benifit-section",
+            id: "serumBenifitSection",
+            innerHTML: `
+                <div class="container d-flex">
+                    <div class="serum-benifit-section-top-title" id="serumBenifitSectionTopTitle"></div>
+                    <div class="serum-benifit-section-bottom-content" id="serumBenifitSectionBottomContent"></div>
+                </div>
+            `,
+            function: addEventListener('load', () => {
+
+                fetch('./content.json').then(res => res.json()).then(data => {
+                    const item = data.benefitSection;
+                    serumBenifitSectionTopTitle.innerHTML = `
+                   <div class="title">
+                       <span>What Benefits you get!</span>
+                   </div>
+                `
+                    item.forEach(list => {
+                        serumBenifitSectionBottomContent.innerHTML += `
+                    <div class="content">
+                          <span>${list.title}</span>
+                          <span>${list.para}</span>
+                    </div>
+                    `
+                    })
+                })
+            })
+        }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className:"serum-promot-section d-flex",
+            id:"serumPromotSection",
+            innerHTML:`
+               <div class="serum-promot-left-content" id="serumPromotLeftContent"></div>
+               <div class="serum-promot-right-img" id="serumPromotRightImg"></div>
+            `,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.promotSection
+                    serumPromotLeftContent.innerHTML = `
+                      <div class="container">
+                            <span>What does serum do for your skin?</span>
+                            <button>Get a Counsultancy</button>
+                      </div>
+                    `
+                    serumPromotRightImg.innerHTML = `
+                       <img src=${item.img}>
                     `
                 })
             })

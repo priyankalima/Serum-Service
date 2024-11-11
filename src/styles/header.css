@@ -346,11 +346,14 @@
                     }
                 }
                 button{
-                    width:50%;
+                    width:30%;
                     padding:15px 0;
                     background: #0e0501;
                     color:var(--light-color);
                     border:none;
+                    @media(max-width:600px){
+                        width:50%;
+                    }
                 }
             }
         }
@@ -359,6 +362,94 @@
             @media(max-width:600px){
                 img{
                     width:100%;
+                }
+            }
+        }
+    }
+
+    .testimonial-section{
+        width:100%;
+        height:auto;
+        padding:100px 0;
+        background:var(--bg-color);
+        @media(max-width:600px){
+            padding:60px 0;
+        }
+
+        .d-flex{
+            display:flex;
+            flex-direction: column;
+            gap:50px;
+        }
+        .testimonial-top-title{
+            text-align: center;
+            span{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 60px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #291003;
+                @media(max-width:600px){
+                    font-size: 42px;
+                }
+            }
+        }
+        .testimonial-bottom-content{
+            display:flex;
+            gap:30px;
+            @media(max-width:600px){
+                flex-direction: column;
+            }
+
+            .content{
+                background:#F9E9CC;
+                display:flex;
+                flex-direction: column;
+                gap:20px;
+                padding:20px;
+
+                .profile{
+                    display:flex;
+                    gap:20px;
+                    align-items: center;
+                    
+                    .profile-img{
+                        width:50px;
+                        height:50px;
+                        background:#EDD0A6;
+                        color:#914949;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+                    .profile-name{
+                        display:flex;
+                        flex-direction: column;
+                        gap:10px;
+                        span:first-child{
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 24px;
+                            letter-spacing: 0.02em;
+                            color: #67422e;
+                        }
+                        span:last-child{
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 16px;
+                            letter-spacing: 0.02em;
+                            color: #67422e;
+                        }
+                    }
+                }
+                .msg{
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0.02em;
+                    color: #825e4a;
                 }
             }
         }

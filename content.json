@@ -46,5 +46,25 @@
     ],
     "promotSection":{
         "img":"./src/assets/side-img-2.svg"
-    }
+    },
+    "testimonial":[
+        {
+            "profile":"R",
+            "name":"Riya Yadav",
+            "year":"26",
+            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+        },
+        {
+            "profile":"P",
+            "name":"Priyanka Roya",
+            "year":"26",
+            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+        },
+        {
+            "profile":"S",
+            "name":"Sonali Jha",
+            "year":"26",
+            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+        }
+    ]
 }

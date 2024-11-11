@@ -167,5 +167,45 @@ header.append(
                 })
             })
         }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className:"testimonial-section",
+            id:"",
+            innerHTML:`
+                <div class="container d-flex">
+                    <div class="testimonial-top-title" id="testimonialTopTitle"></div>
+                    <div class="testimonial-bottom-content" id="testimonialBottomContent"></div>
+                </div>
+            `,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.testimonial;
+                    testimonialTopTitle.innerHTML = `
+                       <span>What Our Customer Say...</span>
+                    `
+                    item.forEach(list=>{
+                    testimonialBottomContent.innerHTML += `
+                       <div class="content">
+                            <div class="profile">
+                                <span class="profile-img">${list.profile}</span>
+                                <div class="profile-name">
+                                <span>${list.name}</span>
+                                <span>${list.year} years</span>
+                                </div>
+                            </div>
+                            <span class="msg">${list.msg}</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="87" height="16" fill="none" viewBox="0 0 87 16">
+                                <path fill="#FFC700" d="m7.5.5 1.684 5.182h5.449l-4.408 3.203 1.683 5.183L7.5 10.865l-4.408 3.203 1.683-5.183L.367 5.682h5.45L7.5.5Zm18 0 1.684 5.182h5.449l-4.409 3.203 1.684 5.183-4.408-3.203-4.408 3.203 1.684-5.183-4.409-3.203h5.45L25.5.5Zm18 0 1.684 5.182h5.449l-4.409 3.203 1.684 5.183-4.408-3.203-4.408 3.203 1.684-5.183-4.409-3.203h5.45L43.5.5Zm18 0 1.684 5.182h5.449l-4.408 3.203 1.683 5.183-4.408-3.203-4.408 3.203 1.684-5.183-4.409-3.203h5.45L61.5.5Z"/>
+                                <path fill="#D9D9D9" d="m79.5.5 1.684 5.182h5.449l-4.408 3.203 1.683 5.183-4.408-3.203-4.408 3.203 1.683-5.183-4.408-3.203h5.45L79.5.5Z"/>
+                            </svg>
+
+                       </div>
+                    `
+                    })
+                })
+            })
+        }
     )
 )

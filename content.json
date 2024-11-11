@@ -12,17 +12,17 @@
             {
                 "icon":"./src/assets/serum-info-icons/icon-1.svg",
                 "title":"Natural",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             },
             {
                 "icon":"./src/assets/serum-info-icons/icon-2.svg",
                 "title":"No side effect",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             },
             {
                 "icon":"./src/assets/serum-info-icons/icon-3.svg",
                 "title":"100% Organic",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
             }
         ]
     },

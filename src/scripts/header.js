@@ -106,7 +106,7 @@ header.append(
                        <span>About Us</span>
                        <span>${item.content}</span>
                        <button> Know More </button>
-                    </div>
+                    </div> 
                     `
                 })
             })

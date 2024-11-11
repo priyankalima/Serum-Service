@@ -255,6 +255,7 @@ header.append(
                <div class="container">
                    <div class="footer-top-content" id="footerTopContent"></div>
                    <div class="footer-bottom-content" id="footerBottomContent"></div>
+                   <div class="copyright"><span>Copyright 2024</span></div>
                </div>
             `,
             function: addEventListener('load', () => {

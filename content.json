@@ -66,5 +66,36 @@
             "year":"26",
             "msg":"Really a good product ,100% worthble fot skin,i really recommends"
         }
-    ]
+    ],
+    "faqSection":[
+        {
+            "title":"Which skin type suitable?",
+            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+        },
+        {
+            "title":"Is skin get soft and glow?",
+            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+        },
+        {
+            "title":"Which skin type suitable?",
+            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+        },
+        {
+            "title":"Is skin get soft and glow?",
+            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+        }
+    ],
+    "footerSection":{
+        "para":"Awsm car ,i really so happy that a branded car gives much smooth driving sensor.",
+        "quickLinks":[
+            "About",
+            "Blog",
+            "Service"
+        ],
+        "address":[
+            "HSR Layout,KA,298007,Ka,India",
+            "+91 000-3456-23456",
+            "contact@areta.in"
+        ]
+    }
 }

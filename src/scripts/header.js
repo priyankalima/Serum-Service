@@ -146,14 +146,14 @@ header.append(
     Object.assign(
         document.createElement('section'),
         {
-            className:"serum-promot-section d-flex",
-            id:"serumPromotSection",
-            innerHTML:`
+            className: "serum-promot-section d-flex",
+            id: "serumPromotSection",
+            innerHTML: `
                <div class="serum-promot-left-content" id="serumPromotLeftContent"></div>
                <div class="serum-promot-right-img" id="serumPromotRightImg"></div>
             `,
-            function:addEventListener('load',()=>{
-                fetch('./content.json').then(res=>res.json()).then(data=>{
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
                     const item = data.promotSection
                     serumPromotLeftContent.innerHTML = `
                       <div class="container">
@@ -171,22 +171,22 @@ header.append(
     Object.assign(
         document.createElement('section'),
         {
-            className:"testimonial-section",
-            id:"",
-            innerHTML:`
+            className: "testimonial-section",
+            id: "",
+            innerHTML: `
                 <div class="container d-flex">
                     <div class="testimonial-top-title" id="testimonialTopTitle"></div>
                     <div class="testimonial-bottom-content" id="testimonialBottomContent"></div>
                 </div>
             `,
-            function:addEventListener('load',()=>{
-                fetch('./content.json').then(res=>res.json()).then(data=>{
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
                     const item = data.testimonial;
                     testimonialTopTitle.innerHTML = `
                        <span>What Our Customer Say...</span>
                     `
-                    item.forEach(list=>{
-                    testimonialBottomContent.innerHTML += `
+                    item.forEach(list => {
+                        testimonialBottomContent.innerHTML += `
                        <div class="content">
                             <div class="profile">
                                 <span class="profile-img">${list.profile}</span>
@@ -204,6 +204,89 @@ header.append(
                        </div>
                     `
                     })
+                })
+            })
+        }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className: "faq-section",
+            id: "",
+            innerHTML: `
+                <div class="container d-flex">
+                    <div class="faq-top-title" id="faqTopTitle"></div>
+                    <div class="faq-bottom-content" id="faqBottomContent"></div>
+                </div>
+            `,
+            function: addEventListener('load', () => {
+                fetch('./content.json').then(res => res.json()).then(data => {
+                    const item = data.faqSection;
+                    faqTopTitle.innerHTML = `
+                      <span>Do You Have Any Query?</span>
+                    `
+                    item.forEach((list, i) => {
+                        faqBottomContent.innerHTML += `
+                            <input type="radio" name="faqTab" id=${"faq" + i}>
+                            <label for=${"faq" + i}>
+                               <span>${list.title}</span>
+                               <span class="arrow">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 10.8653L9.07692 2.49996L16 11.1538" stroke="#67422E" stroke-width="2" />
+                                    </svg>
+                                </span>
+                            </label>
+                            <div class="content">
+                                <span>${list.para}</span>
+                            </div>
+                        `
+                        document.getElementsByName('faqTab')[0].checked = true;
+                    })
+                })
+            })
+        }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            className: "footer-section",
+            id: "",
+            innerHTML: `
+               <div class="container">
+                   <div class="footer-top-content" id="footerTopContent"></div>
+                   <div class="footer-bottom-content" id="footerBottomContent"></div>
+               </div>
+            `,
+            function: addEventListener('load', () => {
+                footerTopContent.innerHTML = `
+                    <span class="subscribe-title">Subscribe our Newslatter</span>
+                    <div class="subscribe-form-input">
+                       <input type="text" placeholder="enter your email">
+                       <button>Subscribe</button>
+                    </div>
+                `
+                fetch("./content.json").then(res => res.json()).then(data => {
+                    const item = data.footerSection;
+
+                    footerBottomContent.innerHTML = `
+                    <div class="logo">
+                        <span>LOGO</span>
+                        <span>${item.para}</span>
+                    </div>
+                    <div class="quicklink">
+                        <span>QuickLinks</span>
+                        ${item.quickLinks.map(list => {
+                        return `<a>${list}</a>`
+                    }).join("")
+                        }
+                    </div>
+                    <div class="address">
+                    ${item.address.map(list => {
+                            return `<a>${list}</a>`
+                        }).join("")
+                        }
+                    </div>
+                    `
                 })
             })
         }

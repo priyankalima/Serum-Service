@@ -31,7 +31,6 @@ body{
         height:auto;
         position: relative;
         
- 
         .d-flex{
             display: flex;
             gap:30px;

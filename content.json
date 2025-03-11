@@ -12,36 +12,36 @@
             {
                 "icon":"./assets/serum-info-icons/icon-1.svg",
                 "title":"Natural",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
+                "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             },
             {
                 "icon":"./assets/serum-info-icons/icon-2.svg",
                 "title":"No side effect",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
+                "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             },
             {
                 "icon":"./assets/serum-info-icons/icon-3.svg",
                 "title":"100% Organic",
-                "para":"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
+                "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             }
         ]
     },
     "aboutSection":{
         "img":"./assets/side-img-1.svg",
-        "content":"Face Serum are lightweight products that contain a high concentration of active ingredient."
+        "content":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
     },
     "benefitSection":[
         {
             "title":"100% Return",
-            "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "title":"On Time Delivery ",
-            "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "title":"24X7 Support",
-            "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         }
     ],
     "promotSection":{
@@ -51,51 +51,51 @@
         {
             "profile":"R",
             "name":"Riya Yadav",
-            "year":"26",
-            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+            "year":"23",
+            "msg":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "profile":"P",
-            "name":"Priyanka Roya",
+            "name":"Priyanka Roy",
             "year":"26",
-            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+            "msg":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "profile":"S",
             "name":"Sonali Jha",
-            "year":"26",
-            "msg":"Really a good product ,100% worthble fot skin,i really recommends"
+            "year":"29",
+            "msg":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         }
     ],
     "faqSection":[
         {
             "title":"Which skin type suitable?",
-            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "title":"Is skin get soft and glow?",
-            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
             "title":"Which skin type suitable?",
-            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         },
         {
-            "title":"Is skin get soft and glow?",
-            "para":"Really a good product ,100% worthble fot skin,i areally recommends"
+            "title":"Which time is suitable for?",
+            "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
         }
     ],
     "footerSection":{
-        "para":"Awsm car ,i really so happy that a branded car gives much smooth driving sensor.",
+        "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt",
         "quickLinks":[
             "About",
             "Blog",
             "Service"
         ],
         "address":[
-            "HSR Layout,KA,298007,Ka,India",
+            "Collifornia,USA",
             "+91 000-3456-23456",
-            "contact@areta.in"
+            "contact@serum.in"
         ]
     }
 }

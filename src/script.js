@@ -268,7 +268,6 @@ main.append(
                 `
                 fetch("./content.json").then(res => res.json()).then(data => {
                     const item = data.footerSection;
-
                     footerBottomContent.innerHTML = `
                     <div class="logo">
                         <span>LOGO</span>

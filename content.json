@@ -1,7 +1,7 @@
 {
     "headerSection":{
         "logo":"",
-        "img":"./assets/serum-img.svg",
+        "img":"src/assets/serum-img.svg",
         "menu":["about","service","blog","contact"],
         "title":"HYPERCHAR SKIN SERUM",
         "para":"Face Serum are lightweight products that contain a high concentration of active ingredient."
@@ -10,24 +10,24 @@
         "title":"Why Choose Us?",
         "content":[
             {
-                "icon":"./assets/serum-info-icons/icon-1.svg",
+                "icon":"src/assets/serum-info-icons/icon-1.svg",
                 "title":"Natural",
                 "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             },
             {
-                "icon":"./assets/serum-info-icons/icon-2.svg",
+                "icon":"src/assets/serum-info-icons/icon-2.svg",
                 "title":"No side effect",
                 "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             },
             {
-                "icon":"./assets/serum-info-icons/icon-3.svg",
+                "icon":"src/assets/serum-info-icons/icon-3.svg",
                 "title":"100% Organic",
                 "para":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
             }
         ]
     },
     "aboutSection":{
-        "img":"./assets/side-img-1.svg",
+        "img":"src/assets/side-img-1.svg",
         "content":"Lorem ispum dolor sit amet, conscectuer adipiscing elit, sed do eiusm tempor incididunt"
     },
     "benefitSection":[
@@ -45,7 +45,7 @@
         }
     ],
     "promotSection":{
-        "img":"./assets/side-img-2.svg"
+        "img":"src/assets/side-img-2.svg"
     },
     "testimonial":[
         {

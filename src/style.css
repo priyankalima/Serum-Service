@@ -1,463 +1,534 @@
-
 /* add font */
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
-body{
-    margin:0;
-    padding:0;
+
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Inder", serif;
+    overflow-x: hidden;
     /* font-weight: 400;
     font-style: normal; */
 }
 
-:root{
-    --theme-color:#FFD271;
-    --bg-color:#FFFAF1;
-    --dark-color:#291003;
-    --light-color:#fcfcfc;
-    --font-family:"Inder", serif;
+:root {
+    --theme-color: #FFD271;
+    --bg-color: #FFFAF1;
+    --dark-color: #291003;
+    --light-color: #fcfcfc;
+    --font-family: "Inder", serif;
 }
-.container{
-    width:90%;
-    margin:auto;
-}
-.main{
-    width:100%;
-    height:auto;
 
-    .header-section{
-        background-color: var(--theme-color);
-        width:100%;
-        height:auto;
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+.header-section {
+    background-color: var(--theme-color);
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .d-flex {
+        display: flex;
+        gap: 30px;
+        align-items: center;
         position: relative;
-        
-        .d-flex{
-            display: flex;
-            gap:30px;
-            align-items: center;
-            position: relative;
-            @media(max-width:600px){
-                flex-direction: column-reverse;
-                
-            }
+
+        @media(max-width:1000px) {
+            flex-direction: column-reverse;
+            gap: 0;
         }
-
-        .serum-left-content{
-            /* background:green; */
-            display:flex;
-            flex-direction: column;
-            gap:50px;
-            padding:30px 0;
-            
-
-            .serum-logo{
-                position: absolute;
-                top:2pc;
-                z-index: 1;
-                span{
-                    font-weight: 400;
-                    font-size: 25px;
-                    letter-spacing: 0.02em;
-                    color: #441c07;
-                }
-            }
-            .serum-title{
-                display:flex;
-                flex-direction: column;
-                gap:10px;
-
-                span:first-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 80px;
-                    letter-spacing: 0.06em;
-                    color: #291003;
-                    @media(max-width:600px){
-                        font-size:48px;
-                    }
-                }
-                span:last-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 18px;
-                    letter-spacing: 0.02em;
-                    color: #441c07;
-                }
-            }
-            .serum-link-btn{
-                display:flex;
-                gap:10px;
-                align-items: center;
-
-                button{
-                    border:none;
-                }
-
-                button:first-child{
-                    padding: 20px 50px;
-                    background: var(--dark-color);
-                    color:var(--light-color);
-                }
-                
-            }
-        }
-
-        .serum-right-img{
-            img{
-               @media(max-width:600px){
-                width:100%;
-               }
-            }
-            .menu-list{
-                display: flex;
-                flex-direction: column;
-                gap:20px;
-                position: fixed;
-                top:2pc;
-                right:4pc;
-                @media(max-width:600px){
-                    right:1.5pc;
-                }
-                a{
-                    text-align: right;
-                    text-transform: capitalize;
-                }
-                a:first-child{
-                    border-right: 2px solid var(--dark-color);
-                    padding-right:5px;
-                    font-weight: 600;
-                }
-
-            }
-        }
-        
-
     }
 
-    .serum-info-section{
-        width:100%;
-        height:auto;
-        padding:100px 0;
-        background-color: var(--bg-color);
-        @media(max-width:600px){
-            padding:60px 0;
+    .serum-left-content {
+        /* background:green; */
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 0;
+
+
+        .serum-logo {
+            position: absolute;
+            top: 2pc;
+            z-index: 1;
+
+            span {
+                font-weight: 400;
+                font-size: 25px;
+                letter-spacing: 0.02em;
+                color: #441c07;
+            }
         }
-        
-        .d-flex{
-            display:flex;
+
+        .serum-title {
+            display: flex;
             flex-direction: column;
-            gap:50px;
+            gap: 10px;
+
+            span:first-child {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 80px;
+                letter-spacing: 0.06em;
+                color: #291003;
+
+                @media(max-width:600px) {
+                    font-size: 48px;
+                }
+            }
+
+            span:last-child {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 18px;
+                letter-spacing: 0.02em;
+                color: #441c07;
+            }
         }
-        .serum-top-title{
+
+        .serum-link-btn {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            button {
+                border: none;
+            }
+
+            button:first-child {
+                padding: 20px 50px;
+                background: var(--dark-color);
+                color: var(--light-color);
+            }
+
+        }
+    }
+
+    .serum-right-img {
+        img {
+            @media(max-width:600px) {
+                width: 100%;
+            }
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: fixed;
+            top: 2pc;
+            right: 4pc;
+
+            @media(max-width:600px) {
+                right: 1.5pc;
+            }
+
+            a {
+                text-align: right;
+                text-transform: capitalize;
+            }
+
+            a:first-child {
+                border-right: 2px solid var(--dark-color);
+                padding-right: 5px;
+                font-weight: 600;
+            }
+
+        }
+    }
+
+
+}
+
+.serum-title {
+    .title::after {
+        content: "HYPERCHAR SKIN SERUM";
+    }
+
+    .para::after {
+        content: "Face Serum are lightweight products that contain a high concentration of active ingredient.";
+    }
+}
+
+.serum-info-section {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    background-color: var(--bg-color);
+
+    @media(max-width:600px) {
+        padding: 60px 0;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .serum-top-title {
+        text-align: center;
+
+        span {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 60px;
+            letter-spacing: 0.02em;
+            color: #291003;
+
+            @media(max-width:600px) {
+                font-size: 42px;
+            }
+        }
+    }
+
+    .serum-bottom-content {
+        display: flex;
+        gap: 50px;
+
+        @media(max-width:1000px) {
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            span{
+
+            img {
+                width: 50px;
+            }
+
+            span:nth-child(2) {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 24px;
+                letter-spacing: 0.02em;
+                color: var(--dark-color);
+
+                @media(max-width:600px) {
+                    font-size: 18px;
+                }
+            }
+
+            span:nth-child(3) {
+                font-family: var(--font-family);
+                font-weight: 200 !important;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #2c2826;
+
+                /* opacity: .8; */
+                @media(max-width:600px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.about-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: var(--bg-color);
+
+    .d-flex {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        @media(max-width:600px) {
+            flex-direction: column;
+        }
+    }
+
+    .about-section-left-img {
+        @media(max-width:600px) {
+            /* margin:0 20px; */
+        }
+
+        img {
+            @media(max-width:600px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-section-right-content {
+
+        .d-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            span:first-child {
                 font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 60px;
                 letter-spacing: 0.02em;
                 color: #291003;
-                @media(max-width:600px){
+
+                @media(max-width:600px) {
                     font-size: 42px;
                 }
             }
-        }
-        .serum-bottom-content{
-            display:flex;
-            gap:50px;
-            @media(max-width:600px){
-                    flex-direction: column;
-                }
-            .content{
-                display:flex;
-                gap:20px;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
 
-                img{
-                    width:50px;
-                }
-                span:nth-child(2){
-                    font-family: var(--font-family);
-                    font-weight: 500;
-                    font-size: 24px;
-                    letter-spacing: 0.02em;
-                    color: var(--dark-color);
-                    @media(max-width:600px){
-                        font-size: 18px;
-                    }
-                }
-                span:nth-child(3){
-                    font-family: var(--font-family);
-                    font-weight: 200 !important;
-                    font-size: 14px;
-                    letter-spacing: 0.02em;
-                    text-align: center;
-                    color: #2c2826;
-                    /* opacity: .8; */
-                    @media(max-width:600px){
-                        font-size: 14px;
-                    }
+            span:last-child {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: #6b5d55;
+            }
+
+            button {
+                padding: 15px 30px;
+                border: none;
+                color: var(--light-color);
+                background-color: var(--dark-color);
+            }
+        }
+
+    }
+}
+
+.serum-benifit-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: var(--bg-color);
+
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .serum-benifit-section-top-title {
+        text-align: center;
+
+        .title {
+            span {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 60px;
+                letter-spacing: 0.02em;
+                color: #291003;
+
+                @media(max-width:600px) {
+                    font-size: 42px;
                 }
             }
         }
     }
 
-    .about-section{
-        width:100%;
+    .serum-benifit-section-bottom-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* background:green; */
+        width: 70%;
+        margin: auto;
+
+        @media(max-width:600px) {
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+
+            span:first-child {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 24px;
+                letter-spacing: 0.02em;
+                color: var(--dark-color);
+
+                @media(max-width:600px) {
+                    font-size: 18px;
+                }
+            }
+
+            span:last-child {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                color: #594033;
+                width: 70%;
+
+                @media(max-width:600px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .content:nth-child(2) {
+            background: linear-gradient(90deg, rgba(244, 228, 201, 0) 0%, #f4e4c9 58.31%, #fffaf1 100%);
+        }
+
+        .content:nth-child(3) {
+            background: linear-gradient(90deg, rgba(244, 200, 120, 0) 0%, #f4c878 54.03%, #fffaf1 100%);
+        }
+
+        .content:last-child {
+            background: linear-gradient(90deg, rgba(249, 223, 176, 0) 0%, #f9dfb0 49.53%, #fffaf1 100%);
+        }
+    }
+}
+
+
+.serum-promot-section {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @media(max-width:600px) {
+        flex-direction: column-reverse;
+    }
+
+    .serum-promot-left-content {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            span {
+
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 60px;
+                letter-spacing: 0.02em;
+                color: #291003;
+
+                @media(max-width:600px) {
+                    font-size: 42px;
+                }
+            }
+
+            button {
+                width: 30%;
+                padding: 15px 0;
+                background: #0e0501;
+                color: var(--light-color);
+                border: none;
+
+                @media(max-width:600px) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .serum-promot-right-img {
+        @media(max-width:600px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: auto;
+
+
+
+
+    .testimonial-section {
+        width: 100%;
         height: auto;
-        padding:60px 0;
+        padding: 100px 0;
         background: var(--bg-color);
 
-        .d-flex{
+        @media(max-width:600px) {
+            padding: 60px 0;
+        }
+
+        .d-flex {
             display: flex;
-            gap:20px;
-            align-items: center;
-            @media(max-width:600px){
-                flex-direction: column;
-            }
-        }
-
-        .about-section-left-img{
-            @media(max-width:600px){
-                /* margin:0 20px; */
-            }
-            img{
-                @media(max-width:600px){
-                    width:100%;
-                }
-            }
-        }
-        .about-section-right-content{
-
-            .d-flex{
-                display:flex;
-                flex-direction: column;
-                align-items: start;
-
-                span:first-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 60px;
-                    letter-spacing: 0.02em;
-                    color: #291003;
-                    @media(max-width:600px){
-                        font-size: 42px;
-                    }
-                }
-                span:last-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 16px;
-                    letter-spacing: 0.02em;
-                    color: #6b5d55;
-                }
-                button{
-                    padding:15px 30px;
-                    border:none;
-                    color:var(--light-color);
-                    background-color: var(--dark-color);
-                }
-            }
-
-        }
-    }
-
-    .serum-benifit-section{
-        width:100%;
-        height: auto;
-        padding:60px 0;
-        background:var(--bg-color);
-        
-        .d-flex{
-            display:flex;
             flex-direction: column;
-            gap:50px;
+            gap: 50px;
         }
 
-        .serum-benifit-section-top-title{
+        .testimonial-top-title {
             text-align: center;
-            .title{
-                span{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 60px;
-                    letter-spacing: 0.02em;
-                    color: #291003;
-                    @media(max-width:600px){
-                        font-size: 42px;
-                    }
-                }
-            }
-        }
-        .serum-benifit-section-bottom-content{
-            display:flex;
-            flex-direction: column;
-            gap:30px;
-            /* background:green; */
-            width:70%;
-            margin:auto;
-            @media(max-width:600px){
-                width:100%;
-            }
-            .content{
-                display:flex;
-                flex-direction: column;
-                gap:20px;
-                padding:10px;
 
-                span:first-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 24px;
-                    letter-spacing: 0.02em;
-                    color: var(--dark-color);
-                    @media(max-width:600px){
-                        font-size: 18px;
-                    }
-                }
-                span:last-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 14px;
-                    letter-spacing: 0.02em;
-                    color: #594033;
-                    width:70%;
-                    @media(max-width:600px){
-                        width:100%;
-                    }
-                }
-            }
-            .content:first-child{
-                background: linear-gradient(90deg, rgba(244, 228, 201, 0) 0%, #f4e4c9 58.31%, #fffaf1 100%);
-            }
-            .content:nth-child(2){
-                background: linear-gradient(90deg, rgba(244, 200, 120, 0) 0%, #f4c878 54.03%, #fffaf1 100%);
-            }
-            .content:last-child{
-                background: linear-gradient(90deg, rgba(249, 223, 176, 0) 0%, #f9dfb0 49.53%, #fffaf1 100%);
-            }
-        }
-    }
-
-    .serum-promot-section{
-        width:100%;
-        height:auto;
-        padding:60px 0;
-        background:var(--bg-color);
-        display:flex;
-        align-items: center;
-        gap:50px;
-        @media(max-width:600px){
-            flex-direction: column-reverse;
-        }
-        .serum-promot-left-content{
-            .container{
-                display:flex;
-                flex-direction: column;
-                gap:30px;
-                span{
-
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 60px;
-                    letter-spacing: 0.02em;
-                    color: #291003;
-                    @media(max-width:600px){
-                        font-size: 42px;
-                    }
-                }
-                button{
-                    width:30%;
-                    padding:15px 0;
-                    background: #0e0501;
-                    color:var(--light-color);
-                    border:none;
-                    @media(max-width:600px){
-                        width:50%;
-                    }
-                }
-            }
-        }
-
-        .serum-promot-right-img{
-            @media(max-width:600px){
-                img{
-                    width:100%;
-                }
-            }
-        }
-    }
-
-    .testimonial-section{
-        width:100%;
-        height:auto;
-        padding:100px 0;
-        background:var(--bg-color);
-        @media(max-width:600px){
-            padding:60px 0;
-        }
-
-        .d-flex{
-            display:flex;
-            flex-direction: column;
-            gap:50px;
-        }
-        .testimonial-top-title{
-            text-align: center;
-            span{
+            span {
                 font-family: var(--font-family);
                 font-weight: 400;
-                font-size: 60px;
+                font-size: 42px;
                 letter-spacing: 0.02em;
                 text-align: center;
                 color: #291003;
-                @media(max-width:600px){
+
+                @media(max-width:600px) {
                     font-size: 42px;
                 }
             }
         }
-        .testimonial-bottom-content{
-            display:flex;
-            gap:30px;
-            @media(max-width:600px){
+
+        .testimonial-bottom-content {
+            display: flex;
+            gap: 30px;
+
+            @media(max-width:600px) {
                 flex-direction: column;
             }
 
-            .content{
-                background:#F9E9CC;
-                display:flex;
+            .content {
+                background: #F9E9CC;
+                display: flex;
                 flex-direction: column;
-                gap:20px;
-                padding:20px;
+                gap: 20px;
+                padding: 20px;
 
-                .profile{
-                    display:flex;
-                    gap:20px;
+                .profile {
+                    display: flex;
+                    gap: 20px;
                     align-items: center;
-                    
-                    .profile-img{
-                        width:50px;
-                        height:50px;
-                        background:#EDD0A6;
-                        color:#914949;
-                        display:flex;
+
+                    .profile-img {
+                        width: 50px;
+                        height: 50px;
+                        background: #EDD0A6;
+                        color: #914949;
+                        display: flex;
                         justify-content: center;
                         align-items: center;
                         border-radius: 50%;
                     }
-                    .profile-name{
-                        display:flex;
+
+                    .profile-name {
+                        display: flex;
                         flex-direction: column;
-                        gap:10px;
-                        span:first-child{
+                        gap: 10px;
+
+                        span:first-child {
                             font-family: var(--font-family);
                             font-weight: 400;
                             font-size: 24px;
                             letter-spacing: 0.02em;
                             color: #67422e;
                         }
-                        span:last-child{
+
+                        span:last-child {
                             font-family: var(--font-family);
                             font-weight: 400;
                             font-size: 16px;
@@ -466,7 +537,8 @@ body{
                         }
                     }
                 }
-                .msg{
+
+                .msg {
                     font-family: var(--font-family);
                     font-weight: 400;
                     font-size: 16px;
@@ -477,51 +549,55 @@ body{
         }
     }
 
-    .faq-section{
-        width:100%;
-        height:auto;
-        padding:60px 0;
-        background:var(--bg-color);
+    .faq-section {
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+        background: var(--bg-color);
 
-        .d-flex{
-            display:flex;
+        .d-flex {
+            display: flex;
             flex-direction: column;
-            gap:50px;
+            gap: 50px;
 
-            .faq-top-title{
+            .faq-top-title {
                 text-align: center;
-                span{
+
+                span {
                     font-family: var(--font-family);
                     font-weight: 400;
-                    font-size: 60px;
+                    font-size: 42px;
                     letter-spacing: 0.02em;
                     text-align: center;
                     color: #291003;
-                    @media(max-width:600px){
+
+                    @media(max-width:600px) {
                         font-size: 42px;
                     }
                 }
             }
 
-            .faq-bottom-content{
-                display:flex;
+            .faq-bottom-content {
+                display: flex;
                 flex-direction: column;
-                gap:30px;
-                width:70%;
-                margin:auto;
-                @media(max-width:600px){
-                    width:100%;
+                gap: 30px;
+                width: 70%;
+                margin: auto;
+
+                @media(max-width:600px) {
+                    width: 100%;
                 }
 
-                input{
-                    display:none;
+                input {
+                    display: none;
                 }
-                label{
+
+                label {
                     cursor: pointer;
-                    display:flex;
+                    display: flex;
                     justify-content: space-between;
 
-                    span:first-child{
+                    span:first-child {
                         font-family: var(--font-family);
                         font-weight: 400;
                         font-size: 18px;
@@ -529,9 +605,11 @@ body{
                         color: #41291d;
                     }
                 }
-                .content{
-                    display:none;
-                    span{
+
+                .content {
+                    display: none;
+
+                    span {
                         font-family: var(--font-family);
                         font-weight: 400;
                         font-size: 16px;
@@ -539,9 +617,11 @@ body{
                         color: #825e4a;
                     }
                 }
+
                 input[type="radio"]:checked+label+.content {
-                    display:block;
+                    display: block;
                 }
+
                 input[type="radio"]:checked+label .arrow {
                     transform: rotate(180deg);
                 }
@@ -549,135 +629,153 @@ body{
         }
     }
 
-    .footer-section{
-        width:100%;
-        height:auto;
-        padding:60px 0;
-        background:var(--dark-color);
+}
 
-        .footer-top-content{
-            display:flex;
-            gap:20px;
-            align-items: center;
-            justify-content: space-between;
-            @media(max-width:600px){
-                flex-direction: column;
+.footer-section {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    background: var(--dark-color);
+
+    .footer-top-content {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width:600px) {
+            flex-direction: column;
+        }
+
+        .subscribe-title {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 42px;
+            letter-spacing: 0.02em;
+            color: #fcfcfc;
+            /* width:40%; */
+            flex-grow: 1;
+
+            @media(max-width:600px) {
+                font-size: 32px;
             }
+        }
 
-            .subscribe-title{
-                font-family: var(--font-family);
+        .subscribe-form-input {
+            /* width:60%; */
+            display: flex;
+            /* gap:20px; */
+            flex-grow: 2;
+
+            input {
+                width: 100%;
+                padding: 15px 20px;
+                background: transparent;
+                border: 1px solid #977272;
+                text-transform: capitalize;
                 font-weight: 400;
-                font-size: 48px;
+                font-size: 14px;
                 letter-spacing: 0.02em;
-                color: #fcfcfc;
-                /* width:40%; */
-                flex-grow: 1;
-                @media(max-width:600px){
-                    font-size: 32px;
-                }
+                color: #484545;
             }
-            .subscribe-form-input{
-                /* width:60%; */
-                display:flex;
-                /* gap:20px; */
-                flex-grow: 2;
 
-                input{
-                    width:100%;
-                    padding: 15px 20px;
-                    background:transparent;
-                    border:1px solid #977272;
-                    text-transform: capitalize;
-                    font-weight: 400;
-                    font-size: 14px;
-                    letter-spacing: 0.02em;
-                    color: #484545;
-                }
-                button{
-                    padding: 15px 30px;
-                    border:none;
-                    background: #ffd271;
-                    font-weight: 600;
-                    font-size: 14px;
-                    letter-spacing: 0.02em;
-                    color: #140801;
-                }
+            button {
+                padding: 15px 30px;
+                border: none;
+                background: #ffd271;
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                color: #140801;
             }
         }
+    }
 
-        .footer-bottom-content{
-            margin-top:30px;
-             display:flex;
-             gap:40px;
-             @media(max-width: 600px){
-                flex-direction: column;
-             }
-             .logo{
-                width:100%;
-                display:flex;
-                flex-direction: column;
-                gap:20px;
-                span:first-child{
-                    font-family: var(--font4);
-                    font-weight: 400;
-                    font-size: 25px;
-                    letter-spacing: 0.02em;
-                    color: #9a3f0f;
-                }
-                span:last-child{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 16px;
-                    letter-spacing: 0.02em;
-                    color: rgba(250, 250, 250, 0.5);
-                }
-             }
-             .quicklink{
-                width:100%;
-                display:flex;
-                flex-direction: column;
-                gap:20px;
+    .footer-bottom-content {
+        margin-top: 5pc;
+        display: flex;
+        gap: 40px;
 
-                span{
-                    font-family: var(--font-family);
-                    font-weight: 500;
-                    font-size: 18px;
-                    letter-spacing: 0.02em;
-                    color: #fff;
-                }
-                a{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 16px;
-                    letter-spacing: 0.02em;
-                    color: rgba(255, 255, 255, 0.8);
-                }
-             }
-             .address{
-                display:flex;
-                flex-direction: column;
-                gap:20px;
-                width:100%;
-
-                a{
-                    font-family: var(--font-family);
-                    font-weight: 400;
-                    font-size: 16px;
-                    letter-spacing: 0.02em;
-                    color: rgba(250, 250, 250, 0.7);
-                }
-
-             }
+        @media(max-width: 600px) {
+            flex-direction: column;
         }
-        .copyright{
-            margin-top:30px;
-            span{
+
+        .logo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span:first-child {
+                font-family: var(--font4);
+                font-weight: 400;
+                font-size: 25px;
+                letter-spacing: 0.02em;
+                color: #9a3f0f;
+            }
+
+            span:last-child {
                 font-family: var(--font-family);
                 font-weight: 400;
                 font-size: 16px;
                 letter-spacing: 0.02em;
-                color: rgba(250, 250, 250, 0.3);
+                color: rgba(250, 250, 250, 0.5);
             }
+        }
+
+        .quicklink {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: 0.02em;
+                color: #fff;
+            }
+
+            a {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* width: 100%; */
+
+            a {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: rgba(250, 250, 250, 0.7);
+            }
+
+        }
+    }
+
+    .copyright {
+        padding: 30px 0;
+        text-align: center;
+
+        span {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            color: rgba(250, 250, 250, 0.3);
+        }
+        a{
+            color: rgba(250, 250, 250, 0.5);
         }
     }
 }
